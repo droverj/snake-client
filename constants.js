@@ -9,8 +9,8 @@ const commandKeys = {
   s: "Move: down",
   d: "Move: right",
   f: "Say: GOAT",
-  r: "Say: #1",
-  e: "Say: wrecked myself"
+  r: "Say: I'm #1",
+  e: "Say: ssstill hungry..."
 };
 
 module.exports = {
