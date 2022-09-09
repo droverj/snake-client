@@ -1,10 +1,8 @@
 // input.js
 const { commandKeys } = require('./constants');
 
-// stores the active TCP connection object
 let connection;
 
-// setup interface to handle user input from stdin
 const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
@@ -18,9 +16,9 @@ const setupInput = (conn) => {
 const handleUserInput = (key) => {
   if (key === '\u0003') {
     process.exit();
-  };
+  }
   if (commandKeys[key]) {
-    connection.write(commandKeys[key])
+    connection.write(commandKeys[key]);
   }
 };
 
